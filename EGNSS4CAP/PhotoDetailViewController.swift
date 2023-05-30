@@ -67,7 +67,7 @@ class PhotoDetailViewController: UIViewController {
             let jsonString = String(data: jsonData, encoding: .utf8)!
             
             // Prepare URL
-            let url = URL(string: "http://18.202.38.244/egnss4capservices/comm_photo.php")
+            let url = URL(string: "<your webserver url>/comm_photo.php")
             guard let requestUrl = url else { fatalError() }
             // Prepare URL Request Object
             var request = URLRequest(url: requestUrl)

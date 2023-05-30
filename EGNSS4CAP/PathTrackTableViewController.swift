@@ -164,7 +164,7 @@ class PathTrackTableViewController: UITableViewController {
             "points": jsonPointsString
         ]
         
-        let url = URL(string: "http://18.202.38.244/egnss4capservices/comm_path.php")
+        let url = URL(string: "<your webserver url>/comm_path.php")
         guard let requestUrl = url else { fatalError() }
         var request = URLRequest(url: requestUrl)
         request.httpMethod = "POST"
